@@ -16,7 +16,15 @@ export class NewRegistrationsComponent {
   }
 
   loadData() {
-    this.http.get('https://1.api.fy23ey05.careers.ifelsecloud.com/').subscribe((data) => {
+    this.http.get('https://1.api.fy23ey05.careers.ifelsecloud.com/',
+    {
+      headers: {
+        "Accept": "application/json",
+        "Accept-Language": "EN",
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*"
+      }
+    }).subscribe((data) => {
       this.jsonData = data
       this.new_users = this.jsonData.new_users
     });
