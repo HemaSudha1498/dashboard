@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ApiDataService } from './api-data.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'dashboard';
+  public data: any;
+
+  constructor(private ApiDataService: ApiDataService, private http: HttpClient) { }
+
+  ngOnInit() {
+
+    this.loadData()
+  }
+
+  loadData() {
+    this.http.get('https://1.api.fy23ey05.careers.ifelsecloud.com/').subscribe((data) => {
+      this.data = data
+    });
+  }
 }

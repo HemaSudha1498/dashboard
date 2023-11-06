@@ -1,0 +1,17 @@
+<div class="main_div">
+    <h4>New User Registrations</h4>
+    <div class="details_list">
+        <ul>
+            <li *ngFor="let item of new_users">
+                <img src={{item.picture}} alt="">
+                <div>
+                    <h5>{{item.name}}</h5>
+                    <span>{{item.country}}</span>
+                </div>
+                <progress id="file" value={{item.progress}} max="100"> {{item.progress}} </progress>
+                <span>{{item.progress}}</span>
+                <button>more</button>
+            </li>
+        </ul>
+    </div>
+</div>

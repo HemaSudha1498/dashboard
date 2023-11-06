@@ -1,0 +1,42 @@
+.chart_section {
+    display: flex;
+    flex-direction: row;
+    padding: 20px
+}
+
+.chart_section h4{
+    margin-left: 10px;
+}
+
+#statistics {
+    width: 100px;
+}
+
+#balance {
+    width: 100px;
+}
+
+#products {
+    width: 100px;
+}
+
+.statistics_section {
+    height: 310px;
+    width: 475px;
+    background-color: white;
+    margin-right: 20px;
+}
+
+.balance_section{
+    height: 310px;
+    width: 510px;
+    background-color: white;
+    margin-right: 20px;
+}
+
+
+.products_section{
+    height: 310px;
+    width: 350px;
+    background-color: white; 
+}

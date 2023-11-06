@@ -1,0 +1,61 @@
+<div class="main_div">
+    <h4>Recent Order</h4>
+    <div class="details">
+        <div class="dataItem">
+            <ul class="heading">
+                <li>
+                    <h5 class="sNoHeading">#</h5>
+                    <h5 class="nameHeading">Customer</h5>
+                    <h5 class="productHeading">Products</h5>
+                    <h5 class="delivery_dateHeading">Delivery Date</h5>
+                    <h5 class="statusHeading">Status</h5>
+                    <h5 class="tracking_noHeading">Tracking No#</h5>
+                    <h5 class="shippingHeading">Shipping</h5>
+                </li>
+            </ul>
+            <ul class="listItems">
+                <li *ngFor="let item of recent_orders, index as i">
+                    <div class="sNo">
+                        {{i}}
+                    </div>
+                    <div class="name">
+                        {{item.name}}
+                    </div>
+                    <div class="product">
+                        {{item.product}}
+                    </div>
+                    <div class="delivery_date">
+                        {{item.delivery_date}}
+                    </div>
+                    <div class="status">
+                        {{item.status}}
+                    </div>
+                    <div class="tracking_no">
+                        {{item.tracking_no}}
+                    </div>
+                    <div class="shipping">
+                        {{item.shipping}}
+                    </div>
+                    <div>
+                        <img style="width: 10px;" src="assets/ui_icons/close.png" alt="" (click)="enablePopUp(item)">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="popUp" *ngIf="popupEnabled">
+    <div class="popUp_div">
+        <img style="width: 10px;" src="assets/ui_icons/close.png" alt="" (click)="enablePopUp(null)">
+        <div>
+            <div>
+                <span>{{customer}}</span>
+            </div>
+            <div>
+                <span>{{product}}</span>
+            </div>
+        </div>
+    </div>
+
+</div>

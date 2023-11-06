@@ -1,0 +1,158 @@
+.dataItem ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.sNo {
+    width: 25px;
+    display: flex;
+}
+
+.sNoHeading {
+    margin: 0;
+    margin-left: 20px;
+}
+
+.name {
+    width: 130px;
+    display: flex;
+}
+
+.nameHeading {
+    margin: 0;
+    margin-left: 60px;
+}
+
+.product {
+    width: 90px;
+    display: flex;
+}
+
+.productHeading {
+    margin: 0;
+    margin-left: 110px;
+}
+
+.delivery_date {
+    width: 160px;
+    display: flex;
+}
+
+.delivery_dateHeading {
+    margin: 0;
+    margin-left: 85px;
+}
+
+.status {
+    width: 70px;
+    display: flex;
+}
+
+.statusHeading {
+    margin: 0;
+    margin-left: 120px;
+}
+
+.tracking_no {
+    width: 80px;
+    display: flex;
+}
+
+.tracking_noHeading {
+    margin: 0;
+    margin-left: 70px;
+}
+
+.shipping {
+    width: 45px;
+    display: flex;
+}
+
+.shippingHeading {
+    margin: 0;
+    margin-left: 35px;
+}
+
+
+.listItems li {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #eeeeee;
+    margin: 20px 0px;
+}
+
+.heading li {
+    display: flex;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.dataItem {
+    text-align: center;
+    width: 100%;
+
+}
+
+.dataItem img {
+    cursor: pointer;
+}
+
+.details {
+    display: flex;
+    max-height: 300px;
+    overflow: auto;
+    justify-content: space-around;
+}
+
+.main_div {
+    // max-height: 300px;
+    overflow: auto;
+}
+
+.main_div h4 {
+    margin: 10px 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    width: 8px;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+.popUp{
+    width: 90%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    place-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.popUp_div {
+    width: 250px;
+    height: 150px;
+    position: relative;
+    background-color: white;
+    text-align: center;
+    border: 1px solid #cecece;
+    box-shadow: 0px 0px 18px 9px rgba(37, 37, 37, 0.1607843137);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.popUp_div img{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}

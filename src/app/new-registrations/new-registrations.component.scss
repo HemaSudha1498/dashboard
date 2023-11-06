@@ -1,0 +1,54 @@
+.details_list ul {
+    list-style: none;
+    max-height: 300px;
+    overflow: auto;
+    margin: 0px 20px;
+    padding: 0;
+}
+
+.details_list ul li {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.details_list h5{
+    margin: 0;
+}
+
+.details_list img{
+    border-radius: 17px;
+}
+
+.details_list progress{
+    width: 75px;
+}
+
+.details_list button{
+    border: none;
+    cursor: pointer;
+}
+
+.details_list div{
+    width: 120px;
+}
+
+
+.main_div h4{
+    margin: 10px 20px;
+    // border-bottom: 1px solid #eeeeee;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    width: 8px;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}

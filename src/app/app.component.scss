@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 1920px;
+    height: 1080px;
+    font-family: 'Poppins', sans-serif !important;
+    font-size:small;
+}
+
+.bodyDiv {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif !important;
+    font-size:small;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    font-family: 'Poppins', sans-serif !important;
+    font-size:small;
+}
+
+.menuToggle #imgToggle {
+    width: 40px;
+}
+
+.imgToggle_div {
+    width: 40px;
+    justify-content: center;
+    display: flex;
+    background: #506de2;
+}
+
+.menuToggle {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    width: 100%;
+}
+
+.left_navigation {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    width: 100%;
+
+}
+
+.content_div{
+    margin: 40px;
+    background-color: #f4f7fc;
+}
+
+.recent_orders{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.orders{
+    width: 70%;
+    background-color: white;
+    margin: 0px 18px;
+}
+
+.registrations{
+    width: 30%;
+    background-color: white;
+    margin-right: 18px;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    width: 8px;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
